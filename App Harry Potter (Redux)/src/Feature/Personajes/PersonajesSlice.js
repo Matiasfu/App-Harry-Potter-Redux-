@@ -3,7 +3,7 @@ import { useFetch } from "../../data/Hooks/FETCH";
 
 const initialState = {
   Characters:  [],
-  Charactertoedit: {},
+  Charactertoedit: null,
   loading: false,
   error: null,
 }

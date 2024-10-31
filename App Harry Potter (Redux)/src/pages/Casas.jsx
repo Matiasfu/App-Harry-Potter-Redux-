@@ -1,6 +1,7 @@
 
 import { useSelector } from "react-redux"
 import Cards from "../components/Cards"
+import BtnCasas from "../components/BtnCasas"
 
 
 const Casas = () => {
@@ -10,7 +11,9 @@ const Casas = () => {
 
   return (
     <>
-      <h1>Casas</h1>
+    
+    {/*comento los cards luego los acomodare en otra carpeta */}
+      {/* 
       {error ? <p>Hubo en error al compilar los datos</p> :
       
       <div className="container-fluid p-3 d-flex flex-wrap gap-2 bg-secondary-subtle my-3">
@@ -22,7 +25,9 @@ const Casas = () => {
 
       </div>
       
-      }
+      } */}
+
+      <BtnCasas/>
       
     </>
   )

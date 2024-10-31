@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import './cards.css'
 import { deletePersonaje, removePersonaje } from '../Feature/Personajes/PersonajesSlice';
 import { updatePersonaje } from '../Feature/Personajes/PersonajesSlice'
-
+import { Toaster, toast } from 'sonner';
 
 const Tablerow = ({personaje}) => {
 
@@ -17,6 +17,7 @@ const { id, nombre , casa } = personaje;
     dispatch(deletePersonaje(id))
     dispatch(removePersonaje(personaje))
     console.log('borrar')
+    toast('Personaje eliminado correctamente')
   }
 
   const handleEditar = ()=>{
@@ -27,6 +28,7 @@ const { id, nombre , casa } = personaje;
   return (
     <>
     
+      <Toaster />
       <tr key={id} >
         
             <th scope="row"> {id} </th>
